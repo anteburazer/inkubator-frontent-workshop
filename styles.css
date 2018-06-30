@@ -17,8 +17,8 @@ a:visited .far, a:visited .fab {
 /* ************* Navigation ************* */
 .nav-container {
     display: flex;
-    position: sticky;
-    top: 0;
+    /*position: sticky;
+    top: 0;*/
     border-bottom: 1px solid rgba(0,0,0,0.1);
     background-color: white;
 }
@@ -53,10 +53,12 @@ a:visited .far, a:visited .fab {
     margin-right: 0.5em;
 }
 
-.instagram-link img {
-    height: 31px;
+.instagram-link span {
     padding-left: 0.5em;
+    font-size: 160%;
     border-left: 1px solid black;
+    color: black;
+    font-family: 'Rochester', cursive;
 }
 
 .nav-content-right,
@@ -108,7 +110,7 @@ a:visited .far, a:visited .fab {
 }
 
 @media screen and (max-width: 650px){
-    .instagram-link img {
+    .instagram-link span {
         display: none;
     }
 
@@ -135,7 +137,10 @@ a:visited .far, a:visited .fab {
     border-radius: 50%;
     border: 1px solid #ddd;
     margin-right: 40px;
-    flex: 0 0 75px
+    flex: 0 0 75px;
+
+    background-image:url("images/urbani_centar.png");
+    background-size: cover;
 }
 
 .content-header-title {
